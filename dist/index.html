@@ -6,14 +6,14 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230107125134">
-	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230107134343">
+	<link rel="shortcut icon" href="favicon.png">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap&_v=20230107125134" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css?_v=20230107125134" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap&_v=20230107134343" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css?_v=20230107134343" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -51,6 +51,7 @@
 			</div>
 		</header>
 		<main class="page">
+			<h1 class="visually-hidden">Pizza restourant</h1>
 			<section class="hero">
 				<div class="hero__container">
 					<div class="hero__text">
@@ -95,26 +96,6 @@
 								<h3 class="item__title">Burger</h3>
 								<h4 class="item__quantity">25 Restaurants Foods</h4>
 							</li>
-							<li class="categories-list__item swiper-slide">
-								<picture><source srcset="img/pizza.webp" type="image/webp"><img src="img/pizza.png" alt="Pizza"></picture>
-								<h3 class="item__title">Pizza</h3>
-								<h4 class="item__quantity">20 Restaurants Foods</h4>
-							</li>
-							<li class="categories-list__item swiper-slide">
-								<picture><source srcset="img/pasta.webp" type="image/webp"><img src="img/pasta.png" alt="Pasta"></picture>
-								<h3 class="item__title">Pasta</h3>
-								<h4 class="item__quantity">15 Restaurants Foods</h4>
-							</li>
-							<li class="categories-list__item swiper-slide">
-								<picture><source srcset="img/shakes.webp" type="image/webp"><img src="img/shakes.png" alt="Shakes"></picture>
-								<h3 class="item__title">Shakes</h3>
-								<h4 class="item__quantity">20 Restaurants Foods</h4>
-							</li>
-							<li class="categories-list__item swiper-slide">
-								<picture><source srcset="img/burger.webp" type="image/webp"><img src="img/burger.png" alt="Burger"></picture>
-								<h3 class="item__title">Burger</h3>
-								<h4 class="item__quantity">25 Restaurants Foods</h4>
-							</li>
 						</ul>
 						<div class="swiper-button-next arrows">
 							<i class="fa-solid fa-chevron-right"></i>
@@ -129,7 +110,7 @@
 				<div class="advantages__container">
 					<ul class="advantages__list">
 						<li class="list__item">
-							<div class="icon">
+							<div data-prlx-mouse class="icon">
 								<svg>
 									<use xlink:href="img/icons/icons.svg#adv-img-1"></use>
 								</svg>
@@ -138,7 +119,7 @@
 							<p class="item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
 						</li>
 						<li class="list__item">
-							<div class="icon">
+							<div data-prlx-mouse class="icon">
 								<svg>
 									<use xlink:href="img/icons/icons.svg#adv-img-2"></use>
 								</svg>
@@ -147,7 +128,7 @@
 							<p class="item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
 						</li>
 						<li class="list__item">
-							<div class="icon">
+							<div data-prlx-mouse class="icon">
 								<svg>
 									<use xlink:href="img/icons/icons.svg#adv-img-3"></use>
 								</svg>
@@ -160,8 +141,8 @@
 			</section>
 			<section class="outlet">
 				<div class="outlet__container">
-					<h3 class="outlet__title">Our outlets</h3>
-					<h2 class="outlet__parag">Find an Outlet Near You</h2>
+					<h2 class="outlet__title">Our outlets</h2>
+					<h3 class="outlet__parag">Find an Outlet Near You</h3>
 					<div class="swiper-outlet">
 						<ul class="outlet__list swiper-wrapper">
 							<li class="list__item swiper-slide">
@@ -186,8 +167,8 @@
 			<section class="delivery">
 				<div class="delivery__container">
 					<div class="delivery__text">
-						<h3 class="delivery__title">Pizza delivery</h3>
-						<h2 class="delivery__maintitle">Get Started Today!</h2>
+						<h2 class="delivery__title">Pizza delivery</h2>
+						<h3 class="delivery__maintitle">Get Started Today!</h3>
 						<div class="line"></div>
 						<p class="delivery_firstparag">
 							Everything you need to build an amazing food restaurant responsive website.
@@ -242,8 +223,8 @@
 							</li>
 						</ul>
 						<button hidden data-showmore-button type="button" class="block__more">
-							<span>Показати ще</span>
-							<span>Приховати</span>
+							<span>Show more</span>
+							<span>Hide</span>
 						</button>
 					</div>
 				</div>
@@ -376,7 +357,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230107125134"></script>
+	<script src="js/app.min.js?_v=20230107134343"></script>
 </body>
 
 </html>

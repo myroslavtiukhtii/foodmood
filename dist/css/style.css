@@ -241,6 +241,17 @@ svg path {
   color: #000000;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .header {
   z-index: 5;
 }
@@ -423,6 +434,12 @@ svg path {
   line-height: 5.6rem;
   color: #FFFFFF;
   margin-bottom: 26px;
+  -webkit-animation-name: animtitle;
+          animation-name: animtitle;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }
 
 .hero__container .hero__text .text__discount {
@@ -454,6 +471,9 @@ svg path {
   font-weight: 700;
   line-height: 1;
   color: #FFFFFF;
+  -webkit-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
 }
 
 .hero__container .hero__text .text__discount .discount__price h3 {
@@ -935,6 +955,26 @@ svg path {
       -ms-flex-align: center;
           align-items: center;
   gap: 5px;
+}
+
+@-webkit-keyframes animtitle {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animtitle {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .swiper {
@@ -1870,6 +1910,10 @@ svg path {
 @media (any-hover: hover) {
   .header .menu__link:hover::after {
     width: 100%;
+  }
+
+  .hero__container .hero__text .text__discount .discount__price:hover {
+    scale: 1.1;
   }
 }
 
