@@ -321,6 +321,21 @@ svg path {
   transition: 0.3s ease;
 }
 
+.header._header-scroll {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  top: -200%;
+  background-color: rgba(0, 0, 0, 0.364);
+}
+
+.header._header-show {
+  -webkit-transition: top 0.3s ease 0s;
+  -o-transition: top 0.3s ease 0s;
+  transition: top 0.3s ease 0s;
+  top: 0;
+}
+
 html.menu-open .header .menu__body {
   left: 0;
 }
