@@ -6,14 +6,14 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230106110418">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230107125134">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap&_v=20230106110418" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css?_v=20230106110418" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap&_v=20230107125134" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css?_v=20230107125134" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -217,10 +217,73 @@
 				<div class="team__container">
 					<h3 class="subtitle">Our members</h3>
 					<h2 class="title">Meet Our Best Team</h2>
-					<ul class="team__list">
-						<li class="team__list--item"></li>
-						<li class="team__list--item"></li>
-						<li class="team__list--item"></li>
+					<div class="line"></div>
+					<div data-showmore="size" data-showmore-media="768,max" class="block">
+						<ul data-showmore-content="460" class="team__list block__content">
+							<li class="team__list--item">
+								<picture><source srcset="img/team-img-1.webp" type="image/webp"><img src="img/team-img-1.png" alt="Alizeh Anderson"></picture>
+								<h3 class="team__list--title">Alizeh Anderson</h3>
+								<p class="team__list--subtitle">Senior Chef</p>
+							</li>
+							<li class="team__list--item">
+								<picture><source srcset="img/team-img-2.webp" type="image/webp"><img src="img/team-img-2.png" alt="Angelina John"></picture>
+								<h3 class="team__list--title">Angelina John</h3>
+								<p class="team__list--subtitle">Master Chef</p>
+							</li>
+							<li class="team__list--item">
+								<picture><source srcset="img/team-img-3.webp" type="image/webp"><img src="img/team-img-3.png" alt="Andre Smith"></picture>
+								<h3 class="team__list--title">Andre Smith</h3>
+								<p class="team__list--subtitle">Professor</p>
+							</li>
+							<li class="team__list--item">
+								<picture><source srcset="img/team-img-4.webp" type="image/webp"><img src="img/team-img-4.png" alt="Alizeh Anderson"></picture>
+								<h3 class="team__list--title">Christina Chi</h3>
+								<p class="team__list--subtitle">Psychologist</p>
+							</li>
+						</ul>
+						<button hidden data-showmore-button type="button" class="block__more">
+							<span>Показати ще</span>
+							<span>Приховати</span>
+						</button>
+					</div>
+				</div>
+			</section>
+			<section class="discount">
+				<div class="discount__container">
+					<div class="discount__text">
+						<h2 class="discount__text--title">Get 20% Discount</h2>
+						<h3 class="discount__text--subtitle">
+							Get flat 20% off on your first order though The Foodmood App!
+						</h3>
+						<div class="discount__text--markets">
+							<a href="#">
+								<picture><source srcset="img/discount-google.webp" type="image/webp"><img src="img/discount-google.png" alt="Icon google market"></picture>
+							</a>
+							<a href="#">
+								<picture><source srcset="img/discount-ios.webp" type="image/webp"><img src="img/discount-ios.png" alt="Icon apple market"></picture>
+							</a>
+						</div>
+					</div>
+					<div class="discount__image">
+						<picture><source srcset="img/discount-img.webp" type="image/webp"><img src="img/discount-img.png" alt="Mobile app image"></picture>
+					</div>
+				</div>
+			</section>
+			<section class="restaurant">
+				<div class="restaurant__container">
+					<ul class="restaurant__list">
+						<li class="restaurant__list--item">
+							<picture><source srcset="img/resturant-img-1.webp" type="image/webp"><img src="img/resturant-img-1.png" alt="Foodchef"></picture>
+						</li>
+						<li class="restaurant__list--item">
+							<picture><source srcset="img/resturant-img-2.webp" type="image/webp"><img src="img/resturant-img-2.png" alt="Lezatoz"></picture>
+						</li>
+						<li class="restaurant__list--item">
+							<picture><source srcset="img/resturant-img-3.webp" type="image/webp"><img src="img/resturant-img-3.png" alt="Chaef Ganteng"></picture>
+						</li>
+						<li class="restaurant__list--item">
+							<picture><source srcset="img/resturant-img-4.webp" type="image/webp"><img src="img/resturant-img-4.png" alt="TastyFood"></picture>
+						</li>
 					</ul>
 				</div>
 			</section>
@@ -313,7 +376,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230106110418"></script>
+	<script src="js/app.min.js?_v=20230107125134"></script>
 </body>
 
 </html>
