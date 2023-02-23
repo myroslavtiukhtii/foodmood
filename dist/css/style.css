@@ -552,6 +552,7 @@ html.menu-open .header .menu__body {
 }
 
 .foods__container .categories-list__item img {
+  height: auto;
   -webkit-transition: 0.3s ease-in;
   -o-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
@@ -655,7 +656,6 @@ html.menu-open .header .menu__body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 42px;
 }
 
 .advantages__container .advantages__list .list__item .icon svg {
@@ -680,10 +680,6 @@ html.menu-open .header .menu__body {
   line-height: 26px;
   text-align: center;
   color: #FFFFFF;
-}
-
-.outlet {
-  padding-top: 76px;
 }
 
 .outlet__container .outlet__title {
@@ -736,10 +732,6 @@ html.menu-open .header .menu__body {
   line-height: 30px;
   text-align: center;
   color: #231900;
-}
-
-.delivery {
-  padding-top: 108px;
 }
 
 .delivery__container {
@@ -954,7 +946,6 @@ html.menu-open .header .menu__body {
 
 .restaurant {
   padding-top: 75px;
-  padding-bottom: 75px;
 }
 
 .restaurant .restaurant__container .restaurant__list {
@@ -970,6 +961,10 @@ html.menu-open .header .menu__body {
       -ms-flex-align: center;
           align-items: center;
   gap: 5px;
+}
+
+.restaurant .restaurant__container .restaurant__list .restaurant__list--item img {
+  height: auto;
 }
 
 @-webkit-keyframes animtitle {
@@ -1132,12 +1127,28 @@ html.menu-open .header .menu__body {
     margin-bottom: 7.5rem;
   }
 
+  .foods__container .categories-list__item img {
+    width: 17.3125rem;
+  }
+
+  .advantages__container .advantages__list .list__item .icon {
+    margin-bottom: 2.625rem;
+  }
+
+  .outlet {
+    padding-top: 4.75rem;
+  }
+
   .outlet__container .outlet__title {
     margin-bottom: 1.5625rem;
   }
 
   .outlet__container .outlet__parag {
     font-size: 3.4375rem;
+  }
+
+  .delivery {
+    padding-top: 6.75rem;
   }
 
   .delivery__container .delivery__text .delivery__maintitle {
@@ -1203,6 +1214,14 @@ html.menu-open .header .menu__body {
   .discount .discount__container .discount__text .discount__text--subtitle {
     margin-bottom: 4.5625rem;
   }
+
+  .restaurant {
+    padding-bottom: 4.6875rem;
+  }
+
+  .restaurant .restaurant__container .restaurant__list .restaurant__list--item img {
+    width: 17.3125rem;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -1246,6 +1265,30 @@ html.menu-open .header .menu__body {
 @media (max-width: 20em) {
   .main-footer__columns {
     gap: 0.9375rem;
+  }
+
+  .foods__container .categories-list__item img {
+    width: 12.5rem;
+  }
+
+  .advantages__container .advantages__list .list__item .icon {
+    margin-bottom: 1.375rem;
+  }
+
+  .outlet {
+    padding-top: 2.0625rem;
+  }
+
+  .delivery {
+    padding-top: 4.375rem;
+  }
+
+  .restaurant {
+    padding-bottom: 2.1875rem;
+  }
+
+  .restaurant .restaurant__container .restaurant__list .restaurant__list--item img {
+    width: 12.5rem;
   }
 }
 
@@ -1538,15 +1581,15 @@ html.menu-open .header .menu__body {
     }
 }
 
-@supports (padding-bottom: clamp( 8.75rem , 5.2045454545rem  +  17.7272727273vw , 18.5rem )) {
+@supports (padding-bottom: clamp( 7.5rem , 3.5rem  +  20vw , 18.5rem )) {
     .hero {
-      padding-bottom: clamp( 8.75rem , 5.2045454545rem  +  17.7272727273vw , 18.5rem );
+      padding-bottom: clamp( 7.5rem , 3.5rem  +  20vw , 18.5rem );
     }
 }
 
-@supports not (padding-bottom: clamp( 8.75rem , 5.2045454545rem  +  17.7272727273vw , 18.5rem )) {
+@supports not (padding-bottom: clamp( 7.5rem , 3.5rem  +  20vw , 18.5rem )) {
     .hero {
-      padding-bottom: calc(8.75rem + 9.75 * (100vw - 20rem) / 55);
+      padding-bottom: calc(7.5rem + 11 * (100vw - 20rem) / 55);
     }
 }
 
@@ -1586,15 +1629,15 @@ html.menu-open .header .menu__body {
     }
 }
 
-@supports (margin-bottom: clamp( 2.8125rem , 1.7443181818rem  +  5.3409090909vw , 5.75rem )) {
+@supports (margin-bottom: clamp( 0.9375rem , -0.8125rem  +  8.75vw , 5.75rem )) {
     .hero__container .hero__text .text__discount {
-      margin-bottom: clamp( 2.8125rem , 1.7443181818rem  +  5.3409090909vw , 5.75rem );
+      margin-bottom: clamp( 0.9375rem , -0.8125rem  +  8.75vw , 5.75rem );
     }
 }
 
-@supports not (margin-bottom: clamp( 2.8125rem , 1.7443181818rem  +  5.3409090909vw , 5.75rem )) {
+@supports not (margin-bottom: clamp( 0.9375rem , -0.8125rem  +  8.75vw , 5.75rem )) {
     .hero__container .hero__text .text__discount {
-      margin-bottom: calc(2.8125rem + 2.9375 * (100vw - 20rem) / 55);
+      margin-bottom: calc(0.9375rem + 4.8125 * (100vw - 20rem) / 55);
     }
 }
 
@@ -1694,15 +1737,51 @@ html.menu-open .header .menu__body {
     }
 }
 
-@supports (margin-bottom: clamp( 3.4375rem , 1.9602272727rem  +  7.3863636364vw , 7.5rem )) {
+@supports (margin-bottom: clamp( 1.5625rem , -0.5965909091rem  +  10.7954545455vw , 7.5rem )) {
     .foods__container .foods__categories {
-      margin-bottom: clamp( 3.4375rem , 1.9602272727rem  +  7.3863636364vw , 7.5rem );
+      margin-bottom: clamp( 1.5625rem , -0.5965909091rem  +  10.7954545455vw , 7.5rem );
     }
 }
 
-@supports not (margin-bottom: clamp( 3.4375rem , 1.9602272727rem  +  7.3863636364vw , 7.5rem )) {
+@supports not (margin-bottom: clamp( 1.5625rem , -0.5965909091rem  +  10.7954545455vw , 7.5rem )) {
     .foods__container .foods__categories {
-      margin-bottom: calc(3.4375rem + 4.0625 * (100vw - 20rem) / 55);
+      margin-bottom: calc(1.5625rem + 5.9375 * (100vw - 20rem) / 55);
+    }
+}
+
+@supports (width: clamp( 12.5rem , 10.75rem  +  8.75vw , 17.3125rem )) {
+    .foods__container .categories-list__item img {
+      width: clamp( 12.5rem , 10.75rem  +  8.75vw , 17.3125rem );
+    }
+}
+
+@supports not (width: clamp( 12.5rem , 10.75rem  +  8.75vw , 17.3125rem )) {
+    .foods__container .categories-list__item img {
+      width: calc(12.5rem + 4.8125 * (100vw - 20rem) / 55);
+    }
+}
+
+@supports (margin-bottom: clamp( 1.375rem , 0.9204545455rem  +  2.2727272727vw , 2.625rem )) {
+    .advantages__container .advantages__list .list__item .icon {
+      margin-bottom: clamp( 1.375rem , 0.9204545455rem  +  2.2727272727vw , 2.625rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 1.375rem , 0.9204545455rem  +  2.2727272727vw , 2.625rem )) {
+    .advantages__container .advantages__list .list__item .icon {
+      margin-bottom: calc(1.375rem + 1.25 * (100vw - 20rem) / 55);
+    }
+}
+
+@supports (padding-top: clamp( 2.0625rem , 1.0852272727rem  +  4.8863636364vw , 4.75rem )) {
+    .outlet {
+      padding-top: clamp( 2.0625rem , 1.0852272727rem  +  4.8863636364vw , 4.75rem );
+    }
+}
+
+@supports not (padding-top: clamp( 2.0625rem , 1.0852272727rem  +  4.8863636364vw , 4.75rem )) {
+    .outlet {
+      padding-top: calc(2.0625rem + 2.6875 * (100vw - 20rem) / 55);
     }
 }
 
@@ -1727,6 +1806,18 @@ html.menu-open .header .menu__body {
 @supports not (font-size: clamp( 1.5625rem , 0.8806818182rem  +  3.4090909091vw , 3.4375rem )) {
     .outlet__container .outlet__parag {
       font-size: calc(1.5625rem + 1.875 * (100vw - 20rem) / 55);
+    }
+}
+
+@supports (padding-top: clamp( 4.375rem , 3.5113636364rem  +  4.3181818182vw , 6.75rem )) {
+    .delivery {
+      padding-top: clamp( 4.375rem , 3.5113636364rem  +  4.3181818182vw , 6.75rem );
+    }
+}
+
+@supports not (padding-top: clamp( 4.375rem , 3.5113636364rem  +  4.3181818182vw , 6.75rem )) {
+    .delivery {
+      padding-top: calc(4.375rem + 2.375 * (100vw - 20rem) / 55);
     }
 }
 
@@ -1919,6 +2010,30 @@ html.menu-open .header .menu__body {
 @supports not (margin-bottom: clamp( 2.6875rem , 2.0056818182rem  +  3.4090909091vw , 4.5625rem )) {
     .discount .discount__container .discount__text .discount__text--subtitle {
       margin-bottom: calc(2.6875rem + 1.875 * (100vw - 20rem) / 55);
+    }
+}
+
+@supports (padding-bottom: clamp( 2.1875rem , 1.2784090909rem  +  4.5454545455vw , 4.6875rem )) {
+    .restaurant {
+      padding-bottom: clamp( 2.1875rem , 1.2784090909rem  +  4.5454545455vw , 4.6875rem );
+    }
+}
+
+@supports not (padding-bottom: clamp( 2.1875rem , 1.2784090909rem  +  4.5454545455vw , 4.6875rem )) {
+    .restaurant {
+      padding-bottom: calc(2.1875rem + 2.5 * (100vw - 20rem) / 55);
+    }
+}
+
+@supports (width: clamp( 12.5rem , 10.75rem  +  8.75vw , 17.3125rem )) {
+    .restaurant .restaurant__container .restaurant__list .restaurant__list--item img {
+      width: clamp( 12.5rem , 10.75rem  +  8.75vw , 17.3125rem );
+    }
+}
+
+@supports not (width: clamp( 12.5rem , 10.75rem  +  8.75vw , 17.3125rem )) {
+    .restaurant .restaurant__container .restaurant__list .restaurant__list--item img {
+      width: calc(12.5rem + 4.8125 * (100vw - 20rem) / 55);
     }
 }
 }
