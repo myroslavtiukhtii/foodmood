@@ -3611,6 +3611,120 @@
             }));
         }
     }), 0);
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(".hero", {
+        y: -25,
+        duration: .5,
+        scrollTrigger: {
+            trigger: ".hero",
+            scrub: 1,
+            pin: false,
+            start: "0% 10%",
+            end: "80% 80%",
+            markers: false
+        }
+    });
+    gsap.from(".text__price", {
+        x: -100,
+        duration: 1
+    });
+    gsap.from(".text__title", {
+        x: -100,
+        duration: 2
+    });
+    gsap.to(".discount__price", {
+        scale: .1,
+        duration: 2,
+        scrollTrigger: {
+            trigger: ".discount__price",
+            scrub: 1,
+            pin: false,
+            start: "0% 10%",
+            end: "80% 80%",
+            markers: false
+        }
+    });
+    gsap.from(".foods__title", {
+        y: -100,
+        opacity: 0,
+        duration: 2,
+        scrollTrigger: {
+            trigger: ".foods__title",
+            scrub: 1,
+            pin: false,
+            start: "0% 60%",
+            end: "80% 80%",
+            markers: false
+        }
+    });
+    gsap.from(".foods__categories", {
+        y: 100,
+        opacity: 0,
+        duration: 2,
+        scrollTrigger: {
+            trigger: ".foods__categories",
+            scrub: 1,
+            pin: false,
+            start: "0% 60%",
+            end: "80% 80%",
+            markers: false
+        }
+    });
+    gsap.from(".categories-list__item", {
+        y: 100,
+        opacity: 0,
+        duration: 3,
+        stagger: .5,
+        scrollTrigger: {
+            trigger: ".categories-list__item",
+            scrub: 1,
+            pin: false,
+            start: "0% 60%",
+            end: "80% 80%",
+            markers: false
+        }
+    });
+    gsap.from(".advantages", {
+        opacity: 0,
+        duration: 3,
+        stagger: .5,
+        scrollTrigger: {
+            trigger: ".advantages",
+            scrub: 1,
+            pin: false,
+            start: "0% 60%",
+            end: "80% 80%",
+            markers: false
+        }
+    });
+    gsap.from(".outlet__item", {
+        y: 100,
+        opacity: 0,
+        duration: 1,
+        stagger: .5,
+        scrollTrigger: {
+            trigger: ".outlet__item",
+            scrub: 1,
+            pin: false,
+            start: "0% 90%",
+            end: "80% 100%",
+            markers: false
+        }
+    });
+    gsap.from(".delivery__img", {
+        scale: .5,
+        opacity: 0,
+        duration: 1,
+        stagger: .5,
+        scrollTrigger: {
+            trigger: ".delivery__img",
+            scrub: 1,
+            pin: false,
+            start: "0% 90%",
+            end: "80% 100%",
+            markers: false
+        }
+    });
     window["FLS"] = true;
     isWebp();
     menuInit();

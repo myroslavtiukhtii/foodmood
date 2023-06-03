@@ -432,11 +432,8 @@ html.menu-open .header .menu__body {
 .hero {
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 143px;
+  padding-top: 163px;
   margin-top: -108px;
-  -webkit-transition: 0.3s ease-in;
-  -o-transition: 0.3s ease-in;
-  transition: 0.3s ease-in;
 }
 
 .hero__container .hero__text .text__price {
@@ -486,9 +483,6 @@ html.menu-open .header .menu__body {
   font-weight: 700;
   line-height: 1;
   color: #FFFFFF;
-  -webkit-transition: 0.3s ease-in;
-  -o-transition: 0.3s ease-in;
-  transition: 0.3s ease-in;
 }
 
 .hero__container .hero__text .text__discount .discount__price h3 {
@@ -533,6 +527,11 @@ html.menu-open .header .menu__body {
   -ms-grid-columns: (1fr)[4];
   grid-template-columns: repeat(4, 1fr);
   gap: 5px;
+}
+
+.foods__container .swiper {
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
 }
 
 .foods__container .categories-list__item {
