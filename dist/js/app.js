@@ -3714,10 +3714,105 @@
     gsap.from(".delivery__img", {
         scale: .5,
         opacity: 0,
-        duration: 1,
+        duration: 3,
         stagger: .5,
         scrollTrigger: {
             trigger: ".delivery__img",
+            scrub: 1,
+            pin: false,
+            start: "0% 90%",
+            end: "80% 100%",
+            markers: false
+        }
+    });
+    gsap.from(".delivery__title", {
+        y: 100,
+        opacity: 0,
+        duration: 2,
+        scrollTrigger: {
+            trigger: ".delivery__title",
+            scrub: 1,
+            pin: false,
+            start: "0% 60%",
+            end: "80% 80%",
+            markers: false
+        }
+    });
+    gsap.from(".delivery__maintitle", {
+        y: -100,
+        opacity: 0,
+        duration: 3,
+        scrollTrigger: {
+            trigger: ".delivery__maintitle",
+            scrub: 1,
+            pin: false,
+            start: "0% 60%",
+            end: "80% 80%",
+            markers: false
+        }
+    });
+    gsap.from(".subtitle", {
+        y: 100,
+        opacity: 0,
+        duration: 2,
+        scrollTrigger: {
+            trigger: ".subtitle",
+            scrub: 1,
+            pin: false,
+            start: "0% 60%",
+            end: "80% 80%",
+            markers: false
+        }
+    });
+    gsap.from(".title", {
+        y: -100,
+        opacity: 0,
+        duration: 3,
+        scrollTrigger: {
+            trigger: ".title",
+            scrub: 1,
+            pin: false,
+            start: "0% 60%",
+            end: "80% 80%",
+            markers: false
+        }
+    });
+    gsap.from(".team__list--item", {
+        x: -100,
+        opacity: 0,
+        duration: 1,
+        stagger: .5,
+        scrollTrigger: {
+            trigger: ".team__list--item",
+            scrub: 1,
+            pin: false,
+            start: "0% 90%",
+            end: "80% 100%",
+            markers: false
+        }
+    });
+    gsap.from(".discount__image", {
+        y: -100,
+        opacity: 0,
+        duration: 7,
+        scrollTrigger: {
+            trigger: ".discount__image",
+            scrub: 1,
+            pin: false,
+            start: "0% 60%",
+            end: "80% 80%",
+            markers: false
+        }
+    });
+    gsap.from(".restaurant__list--item", {
+        x: -100,
+        opacity: 0,
+        scale: 0,
+        ease: Bounce.easeOut,
+        duration: 1,
+        stagger: .5,
+        scrollTrigger: {
+            trigger: ".restaurant__list--item",
             scrub: 1,
             pin: false,
             start: "0% 90%",
